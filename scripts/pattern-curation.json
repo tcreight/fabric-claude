@@ -1,0 +1,277 @@
+{
+  "analyze_claims": {
+    "category": "Analysis",
+    "related_patterns": ["find_logical_fallacies", "check_falsifiability", "extract_extraordinary_claims"],
+    "content_types": ["articles", "essays", "opinion pieces", "debate transcripts", "social media posts"]
+  },
+  "analyze_paper": {
+    "category": "Analysis",
+    "related_patterns": ["summarize_paper", "extract_wisdom", "capture_thinkers_work"],
+    "content_types": ["academic papers", "research articles", "scientific publications", "technical reports"]
+  },
+  "analyze_paper_simple": {
+    "category": "Analysis",
+    "related_patterns": ["analyze_paper", "summarize_paper", "extract_insights"],
+    "content_types": ["academic papers", "research articles", "scientific publications", "technical reports"]
+  },
+  "analyze_incident": {
+    "category": "Analysis",
+    "related_patterns": ["analyze_logs", "analyze_risk", "create_stride_threat_model"],
+    "content_types": ["incident reports", "post-mortems", "security alerts", "system outage reports"]
+  },
+  "analyze_logs": {
+    "category": "Analysis",
+    "related_patterns": ["analyze_incident", "analyze_malware", "analyze_risk"],
+    "content_types": ["system logs", "application logs", "security logs", "audit trails", "error logs"]
+  },
+  "analyze_presentation": {
+    "category": "Analysis",
+    "related_patterns": ["summarize", "extract_wisdom", "extract_insights"],
+    "content_types": ["slide decks", "presentation transcripts", "keynote talks", "conference talks"]
+  },
+  "analyze_product_feedback": {
+    "category": "Analysis",
+    "related_patterns": ["extract_recommendations", "extract_insights", "create_prd"],
+    "content_types": ["user reviews", "survey responses", "support tickets", "customer feedback", "NPS comments"]
+  },
+  "analyze_risk": {
+    "category": "Analysis",
+    "related_patterns": ["create_stride_threat_model", "create_threat_scenarios", "analyze_incident"],
+    "content_types": ["system designs", "project proposals", "security assessments", "architecture docs"]
+  },
+  "analyze_tech_impact": {
+    "category": "Analysis",
+    "related_patterns": ["analyze_paper", "extract_predictions", "compare_and_contrast"],
+    "content_types": ["technology articles", "industry reports", "research papers", "news articles"]
+  },
+  "analyze_threat_report": {
+    "category": "Analysis",
+    "related_patterns": ["analyze_malware", "create_stride_threat_model", "create_threat_scenarios"],
+    "content_types": ["threat intelligence reports", "security bulletins", "CVE reports", "malware analyses"]
+  },
+  "review_code": {
+    "category": "Development",
+    "related_patterns": ["explain_code", "create_coding_project", "write_pull-request"],
+    "content_types": ["source code", "pull requests", "code snippets", "diffs", "scripts"]
+  },
+  "explain_code": {
+    "category": "Development",
+    "related_patterns": ["review_code", "create_coding_project", "explain_docs"],
+    "content_types": ["source code", "scripts", "configuration files", "code snippets", "algorithms"]
+  },
+  "create_coding_project": {
+    "category": "Development",
+    "related_patterns": ["create_design_document", "create_prd", "review_code"],
+    "content_types": ["project requirements", "feature descriptions", "user stories", "technical specs"]
+  },
+  "create_design_document": {
+    "category": "Development",
+    "related_patterns": ["create_prd", "create_coding_project", "create_user_story"],
+    "content_types": ["feature requirements", "project briefs", "architecture discussions", "technical specs"]
+  },
+  "create_prd": {
+    "category": "Development",
+    "related_patterns": ["create_design_document", "create_user_story", "analyze_product_feedback"],
+    "content_types": ["feature requests", "product briefs", "customer feedback", "business requirements"]
+  },
+  "create_user_story": {
+    "category": "Development",
+    "related_patterns": ["create_prd", "create_design_document", "analyze_product_feedback"],
+    "content_types": ["feature requirements", "product specs", "user interviews", "acceptance criteria"]
+  },
+  "summarize_git_diff": {
+    "category": "Development",
+    "related_patterns": ["write_pull-request", "create_git_diff_commit", "review_code"],
+    "content_types": ["git diffs", "code changes", "patch files"]
+  },
+  "summarize_pull-requests": {
+    "category": "Development",
+    "related_patterns": ["write_pull-request", "summarize_git_diff", "review_code"],
+    "content_types": ["pull request descriptions", "code reviews", "git diffs", "change logs"]
+  },
+  "write_pull-request": {
+    "category": "Development",
+    "related_patterns": ["summarize_git_diff", "summarize_pull-requests", "create_git_diff_commit"],
+    "content_types": ["git diffs", "code changes", "feature implementations", "bug fixes"]
+  },
+  "create_git_diff_commit": {
+    "category": "Development",
+    "related_patterns": ["summarize_git_diff", "write_pull-request", "review_code"],
+    "content_types": ["git diffs", "staged changes", "code modifications"]
+  },
+  "extract_wisdom": {
+    "category": "Extraction",
+    "related_patterns": ["extract_insights", "extract_ideas", "extract_recommendations"],
+    "content_types": ["podcasts", "lectures", "books", "long-form articles", "interviews", "talks"]
+  },
+  "extract_article_wisdom": {
+    "category": "Extraction",
+    "related_patterns": ["extract_wisdom", "extract_insights", "summarize"],
+    "content_types": ["news articles", "blog posts", "opinion pieces", "online articles"]
+  },
+  "extract_ideas": {
+    "category": "Extraction",
+    "related_patterns": ["extract_insights", "extract_wisdom", "extract_recommendations"],
+    "content_types": ["brainstorming sessions", "articles", "books", "podcasts", "discussions"]
+  },
+  "extract_insights": {
+    "category": "Extraction",
+    "related_patterns": ["extract_wisdom", "extract_ideas", "extract_recommendations"],
+    "content_types": ["articles", "reports", "research papers", "interviews", "books"]
+  },
+  "extract_recommendations": {
+    "category": "Extraction",
+    "related_patterns": ["extract_insights", "extract_wisdom", "analyze_product_feedback"],
+    "content_types": ["reviews", "reports", "articles", "assessments", "feedback documents"]
+  },
+  "extract_references": {
+    "category": "Extraction",
+    "related_patterns": ["extract_wisdom", "analyze_paper", "capture_thinkers_work"],
+    "content_types": ["academic papers", "books", "articles", "essays", "bibliographies"]
+  },
+  "extract_core_message": {
+    "category": "Extraction",
+    "related_patterns": ["summarize", "extract_wisdom", "create_micro_summary"],
+    "content_types": ["articles", "essays", "speeches", "books", "presentations"]
+  },
+  "extract_predictions": {
+    "category": "Extraction",
+    "related_patterns": ["analyze_tech_impact", "extract_insights", "analyze_paper"],
+    "content_types": ["forecast reports", "trend analyses", "technology articles", "research papers"]
+  },
+  "extract_questions": {
+    "category": "Extraction",
+    "related_patterns": ["extract_insights", "create_flash_cards", "analyze_paper"],
+    "content_types": ["lectures", "articles", "books", "research papers", "presentations"]
+  },
+  "extract_instructions": {
+    "category": "Extraction",
+    "related_patterns": ["explain_docs", "extract_recommendations", "clean_text"],
+    "content_types": ["manuals", "documentation", "how-to guides", "tutorials", "process descriptions"]
+  },
+  "explain_docs": {
+    "category": "Learning",
+    "related_patterns": ["explain_code", "explain_terms", "extract_instructions"],
+    "content_types": ["technical documentation", "API references", "README files", "manuals", "guides"]
+  },
+  "explain_terms": {
+    "category": "Learning",
+    "related_patterns": ["explain_docs", "create_flash_cards", "explain_code"],
+    "content_types": ["technical articles", "research papers", "documentation", "textbooks", "glossaries"]
+  },
+  "create_flash_cards": {
+    "category": "Learning",
+    "related_patterns": ["to_flashcards", "create_reading_plan", "explain_terms"],
+    "content_types": ["textbooks", "lecture notes", "articles", "documentation", "study materials"]
+  },
+  "create_reading_plan": {
+    "category": "Learning",
+    "related_patterns": ["summarize_paper", "capture_thinkers_work", "create_flash_cards"],
+    "content_types": ["book lists", "syllabi", "research topics", "learning objectives", "curricula"]
+  },
+  "to_flashcards": {
+    "category": "Learning",
+    "related_patterns": ["create_flash_cards", "explain_terms", "extract_questions"],
+    "content_types": ["textbooks", "notes", "articles", "documentation", "study materials"]
+  },
+  "summarize_paper": {
+    "category": "Research",
+    "related_patterns": ["analyze_paper", "capture_thinkers_work", "extract_wisdom"],
+    "content_types": ["academic papers", "research articles", "scientific publications", "preprints"]
+  },
+  "capture_thinkers_work": {
+    "category": "Research",
+    "related_patterns": ["summarize_paper", "analyze_paper", "extract_references"],
+    "content_types": ["books", "essays", "academic papers", "interviews", "collected works"]
+  },
+  "compare_and_contrast": {
+    "category": "Research",
+    "related_patterns": ["analyze_tech_impact", "analyze_paper", "extract_insights"],
+    "content_types": ["multiple articles", "product descriptions", "research papers", "competing ideas", "options"]
+  },
+  "analyze_malware": {
+    "category": "Security",
+    "related_patterns": ["analyze_threat_report", "analyze_logs", "create_stride_threat_model"],
+    "content_types": ["malware reports", "code samples", "threat intelligence", "security analyses", "IOC reports"]
+  },
+  "create_stride_threat_model": {
+    "category": "Security",
+    "related_patterns": ["create_threat_scenarios", "analyze_risk", "analyze_incident"],
+    "content_types": ["system designs", "architecture diagrams", "data flow diagrams", "technical specs"]
+  },
+  "create_threat_scenarios": {
+    "category": "Security",
+    "related_patterns": ["create_stride_threat_model", "analyze_risk", "analyze_threat_report"],
+    "content_types": ["system descriptions", "architecture docs", "security requirements", "use case documents"]
+  },
+  "summarize": {
+    "category": "Summarization",
+    "related_patterns": ["create_5_sentence_summary", "create_micro_summary", "extract_core_message"],
+    "content_types": ["articles", "documents", "reports", "books", "transcripts"]
+  },
+  "summarize_meeting": {
+    "category": "Summarization",
+    "related_patterns": ["summarize", "extract_recommendations", "summarize_lecture"],
+    "content_types": ["meeting transcripts", "call recordings", "meeting notes", "video transcripts"]
+  },
+  "summarize_lecture": {
+    "category": "Summarization",
+    "related_patterns": ["summarize_meeting", "extract_wisdom", "create_flash_cards"],
+    "content_types": ["lecture transcripts", "course recordings", "educational videos", "class notes"]
+  },
+  "youtube_summary": {
+    "category": "Summarization",
+    "related_patterns": ["summarize", "extract_wisdom", "summarize_lecture"],
+    "content_types": ["YouTube transcripts", "video content", "online courses", "talk recordings"]
+  },
+  "create_5_sentence_summary": {
+    "category": "Summarization",
+    "related_patterns": ["create_micro_summary", "summarize", "extract_core_message"],
+    "content_types": ["articles", "reports", "documents", "books", "essays"]
+  },
+  "create_micro_summary": {
+    "category": "Summarization",
+    "related_patterns": ["create_5_sentence_summary", "summarize", "extract_core_message"],
+    "content_types": ["articles", "reports", "documents", "books", "essays"]
+  },
+  "improve_writing": {
+    "category": "Writing",
+    "related_patterns": ["clean_text", "create_formal_email", "convert_to_markdown"],
+    "content_types": ["drafts", "essays", "reports", "emails", "blog posts"]
+  },
+  "clean_text": {
+    "category": "Writing",
+    "related_patterns": ["improve_writing", "convert_to_markdown", "create_formal_email"],
+    "content_types": ["raw transcripts", "OCR output", "pasted text", "scraped content", "messy notes"]
+  },
+  "create_formal_email": {
+    "category": "Writing",
+    "related_patterns": ["improve_writing", "create_summary", "clean_text"],
+    "content_types": ["email drafts", "message outlines", "communication briefs", "informal notes"]
+  },
+  "create_summary": {
+    "category": "Writing",
+    "related_patterns": ["summarize", "create_5_sentence_summary", "improve_writing"],
+    "content_types": ["documents", "reports", "articles", "meeting notes", "research papers"]
+  },
+  "convert_to_markdown": {
+    "category": "Writing",
+    "related_patterns": ["clean_text", "improve_writing", "create_formal_email"],
+    "content_types": ["plain text", "HTML content", "Word documents", "formatted text", "raw notes"]
+  },
+  "find_logical_fallacies": {
+    "category": "Critical Thinking",
+    "related_patterns": ["analyze_claims", "check_falsifiability", "extract_extraordinary_claims"],
+    "content_types": ["arguments", "debates", "essays", "opinion pieces", "political speeches"]
+  },
+  "check_falsifiability": {
+    "category": "Critical Thinking",
+    "related_patterns": ["find_logical_fallacies", "analyze_claims", "extract_extraordinary_claims"],
+    "content_types": ["scientific claims", "hypotheses", "theories", "arguments", "research conclusions"]
+  },
+  "extract_extraordinary_claims": {
+    "category": "Critical Thinking",
+    "related_patterns": ["analyze_claims", "find_logical_fallacies", "check_falsifiability"],
+    "content_types": ["articles", "books", "interviews", "speeches", "opinion pieces"]
+  }
+}

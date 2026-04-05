@@ -1,0 +1,972 @@
+{
+  "version": "1.0",
+  "generated": "2026-04-05",
+  "pattern_count": 55,
+  "patterns": [
+    {
+      "name": "analyze_claims",
+      "category": "Analysis",
+      "description": "You are an objectively minded and centrist-oriented analyzer of truth claims and arguments.",
+      "related_patterns": [
+        "find_logical_fallacies",
+        "check_falsifiability",
+        "extract_extraordinary_claims"
+      ],
+      "content_types": [
+        "articles",
+        "essays",
+        "opinion pieces",
+        "debate transcripts",
+        "social media posts"
+      ],
+      "size_bytes": 2765
+    },
+    {
+      "name": "analyze_incident",
+      "category": "Analysis",
+      "description": "",
+      "related_patterns": [
+        "analyze_logs",
+        "analyze_risk",
+        "create_stride_threat_model"
+      ],
+      "content_types": [
+        "incident reports",
+        "post-mortems",
+        "security alerts",
+        "system outage reports"
+      ],
+      "size_bytes": 1802
+    },
+    {
+      "name": "analyze_logs",
+      "category": "Analysis",
+      "description": "You are a system administrator and service reliability engineer at a large tech company.",
+      "related_patterns": [
+        "analyze_incident",
+        "analyze_malware",
+        "analyze_risk"
+      ],
+      "content_types": [
+        "system logs",
+        "application logs",
+        "security logs",
+        "audit trails",
+        "error logs"
+      ],
+      "size_bytes": 2284
+    },
+    {
+      "name": "analyze_paper",
+      "category": "Analysis",
+      "description": "You are a research paper analysis service focused on determining the primary findings of the paper and analyzing its scientific rigor and quality.",
+      "related_patterns": [
+        "summarize_paper",
+        "extract_wisdom",
+        "capture_thinkers_work"
+      ],
+      "content_types": [
+        "academic papers",
+        "research articles",
+        "scientific publications",
+        "technical reports"
+      ],
+      "size_bytes": 6140
+    },
+    {
+      "name": "analyze_paper_simple",
+      "category": "Analysis",
+      "description": "You are a research paper analysis service focused on determining the primary findings of the paper and analyzing its scientific rigor and quality.",
+      "related_patterns": [
+        "analyze_paper",
+        "summarize_paper",
+        "extract_insights"
+      ],
+      "content_types": [
+        "academic papers",
+        "research articles",
+        "scientific publications",
+        "technical reports"
+      ],
+      "size_bytes": 7131
+    },
+    {
+      "name": "analyze_presentation",
+      "category": "Analysis",
+      "description": "You are an expert in reviewing and critiquing presentations.",
+      "related_patterns": [
+        "summarize",
+        "extract_wisdom",
+        "extract_insights"
+      ],
+      "content_types": [
+        "slide decks",
+        "presentation transcripts",
+        "keynote talks",
+        "conference talks"
+      ],
+      "size_bytes": 3058
+    },
+    {
+      "name": "analyze_product_feedback",
+      "category": "Analysis",
+      "description": "You are an AI assistant specialized in analyzing user feedback for products.",
+      "related_patterns": [
+        "extract_recommendations",
+        "extract_insights",
+        "create_prd"
+      ],
+      "content_types": [
+        "user reviews",
+        "survey responses",
+        "support tickets",
+        "customer feedback",
+        "NPS comments"
+      ],
+      "size_bytes": 2076
+    },
+    {
+      "name": "analyze_risk",
+      "category": "Analysis",
+      "description": "You are tasked with conducting a risk assessment of a third-party vendor, which involves analyzing their compliance with security and privacy standards.",
+      "related_patterns": [
+        "create_stride_threat_model",
+        "create_threat_scenarios",
+        "analyze_incident"
+      ],
+      "content_types": [
+        "system designs",
+        "project proposals",
+        "security assessments",
+        "architecture docs"
+      ],
+      "size_bytes": 4167
+    },
+    {
+      "name": "analyze_tech_impact",
+      "category": "Analysis",
+      "description": "You are a technology impact analysis service, focused on determining the societal impact of technology projects.",
+      "related_patterns": [
+        "analyze_paper",
+        "extract_predictions",
+        "compare_and_contrast"
+      ],
+      "content_types": [
+        "technology articles",
+        "industry reports",
+        "research papers",
+        "news articles"
+      ],
+      "size_bytes": 1950
+    },
+    {
+      "name": "analyze_threat_report",
+      "category": "Analysis",
+      "description": "You are a super-intelligent cybersecurity expert. You specialize in extracting the surprising, insightful, and interesting information from cybersecurity threat reports.",
+      "related_patterns": [
+        "analyze_malware",
+        "create_stride_threat_model",
+        "create_threat_scenarios"
+      ],
+      "content_types": [
+        "threat intelligence reports",
+        "security bulletins",
+        "CVE reports",
+        "malware analyses"
+      ],
+      "size_bytes": 2282
+    },
+    {
+      "name": "check_falsifiability",
+      "category": "Critical Thinking",
+      "description": "You are a falsifiability auditor. You evaluate whether claims, definitions, frameworks, or arguments meet the basic standard of legitimate knowledge: can they be proven wrong?",
+      "related_patterns": [
+        "find_logical_fallacies",
+        "analyze_claims",
+        "extract_extraordinary_claims"
+      ],
+      "content_types": [
+        "scientific claims",
+        "hypotheses",
+        "theories",
+        "arguments",
+        "research conclusions"
+      ],
+      "size_bytes": 6274
+    },
+    {
+      "name": "extract_extraordinary_claims",
+      "category": "Critical Thinking",
+      "description": "You are an expert at extracting extraordinary claims from conversations. This means claims that:",
+      "related_patterns": [
+        "analyze_claims",
+        "find_logical_fallacies",
+        "check_falsifiability"
+      ],
+      "content_types": [
+        "articles",
+        "books",
+        "interviews",
+        "speeches",
+        "opinion pieces"
+      ],
+      "size_bytes": 1075
+    },
+    {
+      "name": "find_logical_fallacies",
+      "category": "Critical Thinking",
+      "description": "You are an expert on all the different types of fallacies that are often used in argument and identifying them in input.",
+      "related_patterns": [
+        "analyze_claims",
+        "check_falsifiability",
+        "extract_extraordinary_claims"
+      ],
+      "content_types": [
+        "arguments",
+        "debates",
+        "essays",
+        "opinion pieces",
+        "political speeches"
+      ],
+      "size_bytes": 31829
+    },
+    {
+      "name": "create_coding_project",
+      "category": "Development",
+      "description": "You are an elite programmer. You take project ideas in and output secure and composable code using the format below. You always use the latest technology and best practices.",
+      "related_patterns": [
+        "create_design_document",
+        "create_prd",
+        "review_code"
+      ],
+      "content_types": [
+        "project requirements",
+        "feature descriptions",
+        "user stories",
+        "technical specs"
+      ],
+      "size_bytes": 1800
+    },
+    {
+      "name": "create_design_document",
+      "category": "Development",
+      "description": "You are an expert in software, cloud and cybersecurity architecture. You specialize in creating clear, well written design documents of systems and components.",
+      "related_patterns": [
+        "create_prd",
+        "create_coding_project",
+        "create_user_story"
+      ],
+      "content_types": [
+        "feature requirements",
+        "project briefs",
+        "architecture discussions",
+        "technical specs"
+      ],
+      "size_bytes": 4420
+    },
+    {
+      "name": "create_git_diff_commit",
+      "category": "Development",
+      "description": "You are an expert project manager and developer, and you specialize in creating super clean updates for what changed in a Git diff.",
+      "related_patterns": [
+        "summarize_git_diff",
+        "write_pull-request",
+        "review_code"
+      ],
+      "content_types": [
+        "git diffs",
+        "staged changes",
+        "code modifications"
+      ],
+      "size_bytes": 1201
+    },
+    {
+      "name": "create_prd",
+      "category": "Development",
+      "description": "You are a Product Requirements Document (PRD) Generator.",
+      "related_patterns": [
+        "create_design_document",
+        "create_user_story",
+        "analyze_product_feedback"
+      ],
+      "content_types": [
+        "feature requests",
+        "product briefs",
+        "customer feedback",
+        "business requirements"
+      ],
+      "size_bytes": 1987
+    },
+    {
+      "name": "create_user_story",
+      "category": "Development",
+      "description": "You are an expert on writing concise, clear, and illuminating technical user stories for new features in complex software programs",
+      "related_patterns": [
+        "create_prd",
+        "create_design_document",
+        "analyze_product_feedback"
+      ],
+      "content_types": [
+        "feature requirements",
+        "product specs",
+        "user interviews",
+        "acceptance criteria"
+      ],
+      "size_bytes": 2432
+    },
+    {
+      "name": "explain_code",
+      "category": "Development",
+      "description": "You are an expert coder that takes code and documentation as input and do your best to explain it.",
+      "related_patterns": [
+        "review_code",
+        "create_coding_project",
+        "explain_docs"
+      ],
+      "content_types": [
+        "source code",
+        "scripts",
+        "configuration files",
+        "code snippets",
+        "algorithms"
+      ],
+      "size_bytes": 894
+    },
+    {
+      "name": "review_code",
+      "category": "Development",
+      "description": "",
+      "related_patterns": [
+        "explain_code",
+        "create_coding_project",
+        "write_pull-request"
+      ],
+      "content_types": [
+        "source code",
+        "pull requests",
+        "code snippets",
+        "diffs",
+        "scripts"
+      ],
+      "size_bytes": 4832
+    },
+    {
+      "name": "summarize_git_diff",
+      "category": "Development",
+      "description": "You are an expert project manager and developer, and you specialize in creating super clean updates for what changed in a Git diff.",
+      "related_patterns": [
+        "write_pull-request",
+        "create_git_diff_commit",
+        "review_code"
+      ],
+      "content_types": [
+        "git diffs",
+        "code changes",
+        "patch files"
+      ],
+      "size_bytes": 1603
+    },
+    {
+      "name": "summarize_pull-requests",
+      "category": "Development",
+      "description": "You are an expert at summarizing pull requests to a given coding project.",
+      "related_patterns": [
+        "write_pull-request",
+        "summarize_git_diff",
+        "review_code"
+      ],
+      "content_types": [
+        "pull request descriptions",
+        "code reviews",
+        "git diffs",
+        "change logs"
+      ],
+      "size_bytes": 1055
+    },
+    {
+      "name": "write_pull-request",
+      "category": "Development",
+      "description": "You are an experienced software engineer about to open a PR.",
+      "related_patterns": [
+        "summarize_git_diff",
+        "summarize_pull-requests",
+        "create_git_diff_commit"
+      ],
+      "content_types": [
+        "git diffs",
+        "code changes",
+        "feature implementations",
+        "bug fixes"
+      ],
+      "size_bytes": 4704
+    },
+    {
+      "name": "extract_article_wisdom",
+      "category": "Extraction",
+      "description": "You extract surprising, insightful, and interesting information from text content.",
+      "related_patterns": [
+        "extract_wisdom",
+        "extract_insights",
+        "summarize"
+      ],
+      "content_types": [
+        "news articles",
+        "blog posts",
+        "opinion pieces",
+        "online articles"
+      ],
+      "size_bytes": 1771
+    },
+    {
+      "name": "extract_core_message",
+      "category": "Extraction",
+      "description": "You are an expert at looking at a presentation, an essay, or a full body of lifetime work, and clearly and accurately articulating what the core message is.",
+      "related_patterns": [
+        "summarize",
+        "extract_wisdom",
+        "create_micro_summary"
+      ],
+      "content_types": [
+        "articles",
+        "essays",
+        "speeches",
+        "books",
+        "presentations"
+      ],
+      "size_bytes": 1279
+    },
+    {
+      "name": "extract_ideas",
+      "category": "Extraction",
+      "description": "You are an advanced AI with a 2,128 IQ and you are an expert in understanding any input and extracting the most important ideas from it.",
+      "related_patterns": [
+        "extract_insights",
+        "extract_wisdom",
+        "extract_recommendations"
+      ],
+      "content_types": [
+        "brainstorming sessions",
+        "articles",
+        "books",
+        "podcasts",
+        "discussions"
+      ],
+      "size_bytes": 1351
+    },
+    {
+      "name": "extract_insights",
+      "category": "Extraction",
+      "description": "You are an expert at extracting the most surprising, powerful, and interesting insights from content.",
+      "related_patterns": [
+        "extract_wisdom",
+        "extract_ideas",
+        "extract_recommendations"
+      ],
+      "content_types": [
+        "articles",
+        "reports",
+        "research papers",
+        "interviews",
+        "books"
+      ],
+      "size_bytes": 1169
+    },
+    {
+      "name": "extract_instructions",
+      "category": "Extraction",
+      "description": "You are an expert at extracting clear, concise step-by-step instructions from instructional video transcripts.",
+      "related_patterns": [
+        "explain_docs",
+        "extract_recommendations",
+        "clean_text"
+      ],
+      "content_types": [
+        "manuals",
+        "documentation",
+        "how-to guides",
+        "tutorials",
+        "process descriptions"
+      ],
+      "size_bytes": 1951
+    },
+    {
+      "name": "extract_predictions",
+      "category": "Extraction",
+      "description": "You fully digest input and extract the predictions made within.",
+      "related_patterns": [
+        "analyze_tech_impact",
+        "extract_insights",
+        "analyze_paper"
+      ],
+      "content_types": [
+        "forecast reports",
+        "trend analyses",
+        "technology articles",
+        "research papers"
+      ],
+      "size_bytes": 1047
+    },
+    {
+      "name": "extract_questions",
+      "category": "Extraction",
+      "description": "You are an advanced AI with a 419 IQ that excels at extracting all of the questions asked by an interviewer within a conversation.",
+      "related_patterns": [
+        "extract_insights",
+        "create_flash_cards",
+        "analyze_paper"
+      ],
+      "content_types": [
+        "lectures",
+        "articles",
+        "books",
+        "research papers",
+        "presentations"
+      ],
+      "size_bytes": 1121
+    },
+    {
+      "name": "extract_recommendations",
+      "category": "Extraction",
+      "description": "You are an expert interpreter of the recommendations present within a piece of content.",
+      "related_patterns": [
+        "extract_insights",
+        "extract_wisdom",
+        "analyze_product_feedback"
+      ],
+      "content_types": [
+        "reviews",
+        "reports",
+        "articles",
+        "assessments",
+        "feedback documents"
+      ],
+      "size_bytes": 477
+    },
+    {
+      "name": "extract_references",
+      "category": "Extraction",
+      "description": "You are an expert extractor of references to art, stories, books, literature, papers, and other sources of learning from content.",
+      "related_patterns": [
+        "extract_wisdom",
+        "analyze_paper",
+        "capture_thinkers_work"
+      ],
+      "content_types": [
+        "academic papers",
+        "books",
+        "articles",
+        "essays",
+        "bibliographies"
+      ],
+      "size_bytes": 564
+    },
+    {
+      "name": "extract_wisdom",
+      "category": "Extraction",
+      "description": "You extract surprising, insightful, and interesting information from text content.",
+      "related_patterns": [
+        "extract_insights",
+        "extract_ideas",
+        "extract_recommendations"
+      ],
+      "content_types": [
+        "podcasts",
+        "lectures",
+        "books",
+        "long-form articles",
+        "interviews",
+        "talks"
+      ],
+      "size_bytes": 3251
+    },
+    {
+      "name": "create_flash_cards",
+      "category": "Learning",
+      "description": "You are an expert educator AI with a 4,221 IQ. You specialize in understanding the key concepts in a piece of input and creating flashcards for those key concepts.",
+      "related_patterns": [
+        "to_flashcards",
+        "create_reading_plan",
+        "explain_terms"
+      ],
+      "content_types": [
+        "textbooks",
+        "lecture notes",
+        "articles",
+        "documentation",
+        "study materials"
+      ],
+      "size_bytes": 676
+    },
+    {
+      "name": "create_reading_plan",
+      "category": "Learning",
+      "description": "You take guidance and/or an author name as input and design a perfect three-phase reading plan for the user using the STEPS below.",
+      "related_patterns": [
+        "summarize_paper",
+        "capture_thinkers_work",
+        "create_flash_cards"
+      ],
+      "content_types": [
+        "book lists",
+        "syllabi",
+        "research topics",
+        "learning objectives",
+        "curricula"
+      ],
+      "size_bytes": 3577
+    },
+    {
+      "name": "explain_docs",
+      "category": "Learning",
+      "description": "You are an expert at capturing, understanding, and explaining the most important parts of instructions, documentation, or other formats of input that describe how to use a tool.",
+      "related_patterns": [
+        "explain_code",
+        "explain_terms",
+        "extract_instructions"
+      ],
+      "content_types": [
+        "technical documentation",
+        "API references",
+        "README files",
+        "manuals",
+        "guides"
+      ],
+      "size_bytes": 1505
+    },
+    {
+      "name": "explain_terms",
+      "category": "Learning",
+      "description": "You are the world's best explainer of terms required to understand a given piece of content.",
+      "related_patterns": [
+        "explain_docs",
+        "create_flash_cards",
+        "explain_code"
+      ],
+      "content_types": [
+        "technical articles",
+        "research papers",
+        "documentation",
+        "textbooks",
+        "glossaries"
+      ],
+      "size_bytes": 1603
+    },
+    {
+      "name": "to_flashcards",
+      "category": "Learning",
+      "description": "You are a professional Anki card creator, able to create Anki cards from texts.",
+      "related_patterns": [
+        "create_flash_cards",
+        "explain_terms",
+        "extract_questions"
+      ],
+      "content_types": [
+        "textbooks",
+        "notes",
+        "articles",
+        "documentation",
+        "study materials"
+      ],
+      "size_bytes": 2448
+    },
+    {
+      "name": "capture_thinkers_work",
+      "category": "Research",
+      "description": "You take a philosopher, professional, notable figure, thinker, writer, author, philosophers, or philosophy as input, and you output a template about what it/they taught.",
+      "related_patterns": [
+        "summarize_paper",
+        "analyze_paper",
+        "extract_references"
+      ],
+      "content_types": [
+        "books",
+        "essays",
+        "academic papers",
+        "interviews",
+        "collected works"
+      ],
+      "size_bytes": 2476
+    },
+    {
+      "name": "compare_and_contrast",
+      "category": "Research",
+      "description": "Please be brief. Compare and contrast the list of items.",
+      "related_patterns": [
+        "analyze_tech_impact",
+        "analyze_paper",
+        "extract_insights"
+      ],
+      "content_types": [
+        "multiple articles",
+        "product descriptions",
+        "research papers",
+        "competing ideas",
+        "options"
+      ],
+      "size_bytes": 255
+    },
+    {
+      "name": "summarize_paper",
+      "category": "Research",
+      "description": "",
+      "related_patterns": [
+        "analyze_paper",
+        "capture_thinkers_work",
+        "extract_wisdom"
+      ],
+      "content_types": [
+        "academic papers",
+        "research articles",
+        "scientific publications",
+        "preprints"
+      ],
+      "size_bytes": 2063
+    },
+    {
+      "name": "analyze_malware",
+      "category": "Security",
+      "description": "You are a malware analysis expert and you are able to understand malware for any kind of platform including, Windows, MacOS, Linux or android.",
+      "related_patterns": [
+        "analyze_threat_report",
+        "analyze_logs",
+        "create_stride_threat_model"
+      ],
+      "content_types": [
+        "malware reports",
+        "code samples",
+        "threat intelligence",
+        "security analyses",
+        "IOC reports"
+      ],
+      "size_bytes": 2913
+    },
+    {
+      "name": "create_stride_threat_model",
+      "category": "Security",
+      "description": "You are an expert in risk and threat management and cybersecurity. You specialize in creating threat models using STRIDE per element methodology for any system.",
+      "related_patterns": [
+        "create_threat_scenarios",
+        "analyze_risk",
+        "analyze_incident"
+      ],
+      "content_types": [
+        "system designs",
+        "architecture diagrams",
+        "data flow diagrams",
+        "technical specs"
+      ],
+      "size_bytes": 3933
+    },
+    {
+      "name": "create_threat_scenarios",
+      "category": "Security",
+      "description": "You are an expert in risk and threat management and cybersecurity.",
+      "related_patterns": [
+        "create_stride_threat_model",
+        "analyze_risk",
+        "analyze_threat_report"
+      ],
+      "content_types": [
+        "system descriptions",
+        "architecture docs",
+        "security requirements",
+        "use case documents"
+      ],
+      "size_bytes": 20264
+    },
+    {
+      "name": "create_5_sentence_summary",
+      "category": "Summarization",
+      "description": "You are an all-knowing AI with a 476 I.Q. that deeply understands concepts.",
+      "related_patterns": [
+        "create_micro_summary",
+        "summarize",
+        "extract_core_message"
+      ],
+      "content_types": [
+        "articles",
+        "reports",
+        "documents",
+        "books",
+        "essays"
+      ],
+      "size_bytes": 1079
+    },
+    {
+      "name": "create_micro_summary",
+      "category": "Summarization",
+      "description": "You are an expert content summarizer. You take content in and output a Markdown formatted summary using the format below.",
+      "related_patterns": [
+        "create_5_sentence_summary",
+        "summarize",
+        "extract_core_message"
+      ],
+      "content_types": [
+        "articles",
+        "reports",
+        "documents",
+        "books",
+        "essays"
+      ],
+      "size_bytes": 968
+    },
+    {
+      "name": "summarize",
+      "category": "Summarization",
+      "description": "You are an expert content summarizer. You take content in and output a Markdown formatted summary using the format below.",
+      "related_patterns": [
+        "create_5_sentence_summary",
+        "create_micro_summary",
+        "extract_core_message"
+      ],
+      "content_types": [
+        "articles",
+        "documents",
+        "reports",
+        "books",
+        "transcripts"
+      ],
+      "size_bytes": 960
+    },
+    {
+      "name": "summarize_lecture",
+      "category": "Summarization",
+      "description": "As an organized, high-skill expert lecturer, your role is to extract the most relevant topics from a lecture transcript and provide a structured summary using bullet points and lists of definitions fo...",
+      "related_patterns": [
+        "summarize_meeting",
+        "extract_wisdom",
+        "create_flash_cards"
+      ],
+      "content_types": [
+        "lecture transcripts",
+        "course recordings",
+        "educational videos",
+        "class notes"
+      ],
+      "size_bytes": 4418
+    },
+    {
+      "name": "summarize_meeting",
+      "category": "Summarization",
+      "description": "You are an AI assistant specialized in analyzing meeting transcripts and extracting key information.",
+      "related_patterns": [
+        "summarize",
+        "extract_recommendations",
+        "summarize_lecture"
+      ],
+      "content_types": [
+        "meeting transcripts",
+        "call recordings",
+        "meeting notes",
+        "video transcripts"
+      ],
+      "size_bytes": 1926
+    },
+    {
+      "name": "youtube_summary",
+      "category": "Summarization",
+      "description": "You are an AI assistant specialized in creating concise, informative summaries of YouTube video content based on transcripts.",
+      "related_patterns": [
+        "summarize",
+        "extract_wisdom",
+        "summarize_lecture"
+      ],
+      "content_types": [
+        "YouTube transcripts",
+        "video content",
+        "online courses",
+        "talk recordings"
+      ],
+      "size_bytes": 2073
+    },
+    {
+      "name": "clean_text",
+      "category": "Writing",
+      "description": "You are an expert at cleaning up broken and, malformatted, text, for example: line breaks in weird places, etc.",
+      "related_patterns": [
+        "improve_writing",
+        "convert_to_markdown",
+        "create_formal_email"
+      ],
+      "content_types": [
+        "raw transcripts",
+        "OCR output",
+        "pasted text",
+        "scraped content",
+        "messy notes"
+      ],
+      "size_bytes": 557
+    },
+    {
+      "name": "convert_to_markdown",
+      "category": "Writing",
+      "description": "",
+      "related_patterns": [
+        "clean_text",
+        "improve_writing",
+        "create_formal_email"
+      ],
+      "content_types": [
+        "plain text",
+        "HTML content",
+        "Word documents",
+        "formatted text",
+        "raw notes"
+      ],
+      "size_bytes": 1647
+    },
+    {
+      "name": "create_formal_email",
+      "category": "Writing",
+      "description": "You are an expert in formal communication with extensive knowledge in business etiquette and professional writing.",
+      "related_patterns": [
+        "improve_writing",
+        "create_summary",
+        "clean_text"
+      ],
+      "content_types": [
+        "email drafts",
+        "message outlines",
+        "communication briefs",
+        "informal notes"
+      ],
+      "size_bytes": 2711
+    },
+    {
+      "name": "create_summary",
+      "category": "Writing",
+      "description": "You are an expert content summarizer. You take content in and output a Markdown formatted summary using the format below.",
+      "related_patterns": [
+        "summarize",
+        "create_5_sentence_summary",
+        "improve_writing"
+      ],
+      "content_types": [
+        "documents",
+        "reports",
+        "articles",
+        "meeting notes",
+        "research papers"
+      ],
+      "size_bytes": 960
+    },
+    {
+      "name": "improve_writing",
+      "category": "Writing",
+      "description": "You are a writing expert. You refine the input text to enhance clarity, coherence, grammar, and style.",
+      "related_patterns": [
+        "clean_text",
+        "create_formal_email",
+        "convert_to_markdown"
+      ],
+      "content_types": [
+        "drafts",
+        "essays",
+        "reports",
+        "emails",
+        "blog posts"
+      ],
+      "size_bytes": 705
+    }
+  ]
+}
