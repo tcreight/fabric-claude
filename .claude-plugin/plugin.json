@@ -1,0 +1,11 @@
+{
+  "name": "fabric-claude",
+  "version": "1.0.0",
+  "description": "Apply Fabric prompt patterns natively in Claude Code sessions with URL fetching and Obsidian output",
+  "author": {
+    "name": "Tyler Creighton"
+  },
+  "repository": "https://github.com/tylerc/fabric-claude",
+  "license": "MIT",
+  "keywords": ["fabric", "patterns", "research", "obsidian", "youtube"]
+}
