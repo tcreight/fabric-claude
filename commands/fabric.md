@@ -102,18 +102,24 @@ Do NOT suggest the pattern that was just run.
 
 If `--no-save` was NOT passed:
 
-1. Ensure the output directory exists:
+1. Determine the output directory:
+   - Check if `.claude/fabric-claude.local.md` exists in the project root
+   - If it exists, parse the YAML frontmatter and read the `output_path` field
+   - If the file doesn't exist or `output_path` is not set, use the default: `~/Documents/Projects/fabric-outputs`
+   - Expand `~` to the user's home directory
+
+2. Ensure the output directory exists:
    ```
-   mkdir -p ~/Documents/Projects/fabric-outputs
+   mkdir -p <output_path>
    ```
 
-2. Generate the filename:
+3. Generate the filename:
    - Get timestamp: `date +%Y-%m-%d-%H%M`
    - Build slug from source (video title, URL domain, or first 5 words of content). Lowercase, hyphens, no special chars, max 50 chars.
    - Format: `<timestamp>-<pattern>-<slug>.md`
    - Example: `2026-04-05-1423-extract-wisdom-andrej-karpathy-llms.md`
 
-3. Write the note with this format:
+4. Write the note with this format:
 
 ```markdown
 ---
@@ -138,4 +144,4 @@ tags:
 <same suggestions as stdio output, formatted as bullet list>
 ```
 
-4. Confirm to the user: "Saved to `~/Documents/Projects/fabric-outputs/<filename>`"
+5. Confirm to the user: "Saved to `<output_path>/<filename>`"

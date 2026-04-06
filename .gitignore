@@ -6,3 +6,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Plugin local settings
+.claude/*.local.md

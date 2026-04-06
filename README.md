@@ -13,7 +13,7 @@ A Claude Code plugin that brings [Fabric](https://github.com/danielmiessler/Fabr
 ## Install
 
 ```bash
-git clone https://github.com/tylerc/fabric-claude.git ~/projects/fabric-claude
+git clone git@github.com:tcreight/fabric-claude.git ~/projects/fabric-claude
 claude plugin add ~/projects/fabric-claude
 ```
 
@@ -41,9 +41,23 @@ pipx install trafilatura
 /fabric --pattern review_code --no-save                    # Skip Obsidian output
 ```
 
+## Configuration
+
+Create `.claude/fabric-claude.local.md` in your project to customize settings:
+
+```markdown
+---
+output_path: ~/Documents/Projects/fabric-outputs
+---
+```
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `output_path` | `~/Documents/Projects/fabric-outputs` | Directory where Obsidian notes are saved |
+
 ## Obsidian Output
 
-Notes save to `~/Documents/Projects/fabric-outputs/` with YAML frontmatter:
+Notes save to your configured `output_path` (default: `~/Documents/Projects/fabric-outputs/`) with YAML frontmatter:
 
 ```yaml
 source: "https://youtube.com/watch?v=abc123"
@@ -63,4 +77,4 @@ bash ~/projects/fabric-claude/scripts/build-index.sh
 
 ## License
 
-MIT
+MIT. Bundled patterns in `references/top-patterns/` are from [Fabric](https://github.com/danielmiessler/fabric) by Daniel Miessler, also MIT-licensed.
