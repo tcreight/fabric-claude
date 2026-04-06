@@ -1,0 +1,18 @@
+{
+  "name": "fabric-claude",
+  "description": "Local marketplace for fabric-claude plugin",
+  "owner": {
+    "name": "Tyler Creighton"
+  },
+  "plugins": [
+    {
+      "name": "fabric-claude",
+      "description": "Apply Fabric prompt patterns natively in Claude Code sessions",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tcreight/fabric-claude.git"
+      },
+      "category": "productivity"
+    }
+  ]
+}
