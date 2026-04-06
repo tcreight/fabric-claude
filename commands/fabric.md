@@ -1,6 +1,6 @@
 ---
 description: Apply Fabric prompt patterns to content with URL fetching and Obsidian output
-argument-hint: [--url <url>] [--pattern <name>] [--no-save]
+argument-hint: "[--url <url>] [--pattern <name>] [--no-save]"
 allowed-tools: Bash(youtube_transcript_api:*), Bash(trafilatura:*), Bash(wc:*), Bash(mkdir:*), Bash(which:*), Bash(date:*), Bash(head:*), Read, Write, Grep, Glob
 ---
 
